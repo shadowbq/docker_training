@@ -1,0 +1,216 @@
+    2  sudo shutdown -h now
+    3  exit
+    4  docker run hello-world
+    5  docker version
+    6  docker images
+    7  docker run ubuntu:14.04 ps ax
+    8  docker run ubuntu:14.04 ps ax
+    9  docker run ubuntu:14.04 whoami
+   10  docker run ubuntu:14.04 pwd
+   12  docker run -i -t ubuntu:14.04 /bin/bash
+   13  docker run -i -t ubuntu:14.04 /bin/bash
+   14  docker images
+   15  docker ps
+   16  docker ps -a
+   17  docker run centos:7 ping 127.0.0.1 -c 100
+   18  docker ps -a
+   19  docker run -d centos:7 ping 127.0.0.1 -c 100
+   20  docker ps
+   21  docker logs 13a4d933afb4
+   22  docker logs -f 13a4d933afb4
+   23  docker logs -f 13a4d933afb4
+   24  docker ps
+   25  docker ps -a
+   26  docker images
+   27  docker run -d -P tomcat:7
+   28  docker ps
+   29  ifconfig
+   30  ps aux |grep tom
+   32  /usr/bin/toolbox --help
+   34  ip addr show
+   35  ifconfig
+   36  toolbox
+   40  toolbox htop
+   46  toolbox iotop
+   48  toolbox bmon
+   49  netstat -lntp
+   50  docker ps
+   51  toolbox 
+   52  toolbox glances
+   54  ss -ap
+   57  ss -a
+   58  ss -ap
+   60  ss -a -a -4 -t p
+   61  ss -a -a -4 -t -p
+   62  ss -a -a -t -p
+   63  ss -a -t -p
+   64  ss -l -t -p
+   65  ss -l -t -p -b
+   66  ss -l -t 
+   67  ss -l -t -m
+   68  ss -l -t -m -u
+   69  ss -l -t -m -z
+   70  ss -l -t -m -Z
+   71  ss -l -t -m -e
+   72  ps aux |grep 69448
+   73  ps aux |grep tomca
+   74  ss --help
+   75  ss -p -l -t -m -e
+   76  lsof -iN p
+   77  lsof -i -nP
+   78  sudo lsof -i -nP
+   79  docker ps
+   80  docker 
+   81  docker ps
+   82  docker kill 4541b36a7574
+   83  docker ps
+   84  docker ps -a
+   85  history |grep docker
+   86  docker run -i -t ubuntu:14.04 /bin/bash
+   87  docker ps -a
+   88  docker commit 479718d82b8f shadowbq/curl:1.0
+   89  docker images
+   90  docker run -it shaodwbq/curl bash
+   91  docker run -it shadowbq/curl bash
+   92  docker run -it shadowbq/curl:1.0 bash
+   93  docker run shadowbq/curl:1.0 which curl
+   94  mkdir sandbox
+   95  cd sandbox/
+   96  mkdir test
+   97  cd test/
+   98  vim Dockerfile
+   99  docker build -t shadowbq/testimage:1.0 . 
+  100  docker images
+  101  docker run shadowbq/testimage curl --version
+  102  docker run shadowbq/testimage:1.0 curl --version
+  103  cat Dockerfile 
+  104  vi Dockerfile 
+  105  docker run shadowbq/testimage:1.1 curl --version
+  106  docker build -t shadowbq/testimage:1.1 . 
+  107  docker run shadowbq/testimage:1.1
+  108  cat /etc/*-rlease
+  109  cat /etc/*-release
+  110  vi Dockerfile 
+  111  docker build -t shadowbq/testimage:1.1 . 
+  112  docker run shadowbq/testimage:1.1
+  113  docker run shadowbq/testimage:1.1 echo "hello world"
+  114  git init .
+  115  git add .
+  116  git commit -m '1.1'
+  117  git config --global user.email "shadowbq@gmail.com"
+  118  git config --global user.name "shadowbq"
+  119  git commit -m '1.1'
+  120  git status
+  121  ls -la
+  122  vi Dockerfile 
+  123  docker build -t shadowbq/testimage:1.2 . 
+  124  docker run shadowbq/testimage:1.2
+  125  docker run shadowbq/testimage:1.2 127.0.0.1
+  126  docker run shadowbq/testimage:1.2 127.0.0.1 -c 3
+  127  docker run -d nginx
+  128  docker ps
+  129  docker stop c4b2fd75cecf
+  130  docker ps
+  131  docker help 
+  132  docker help rm
+  133  docker ps
+  134  docker ps -a
+  135  docker start cranky_nobel
+  136  docker ps
+  137  docker stop c4b2fd75cecf
+  138  docker start -P cranky_nobel
+  139  docker start -p cranky_nobel
+  140  docker start --help
+  141  docker ps
+  142  docker help run
+  143  docker run -d -P nginx
+  144  docker ps
+  145  docker stop
+  146  docker ps
+  147  docker stop 4ca8d0244cca
+  148  docker start distracted_turing
+  149  docker ps
+  150  docker ps
+  151  docker stop distracted_turing
+  152  docker start distracted_turing
+  153  docker exec -it distracted_turing bash
+  154  docker stop distracted_turing
+  155  docker ps -a
+  156  docker images
+  157  df -h
+  158  ls -la /opt
+  159  docker images
+  160  docker push shadowbq/testimage
+  161  docker push shadowbq/testimage:1.2
+  162  docker push shadowbq/testimage:1.1
+  163  docker push shadowbq/testimage:1.0
+  164  echo #?
+  165  docker images
+  166  docker version
+  167  docker ps
+  168  docker rmi bdbd7cca68d1
+  169  docker ps
+  170  docker ps -a
+  171  docker rm silly_curie
+  172  docker rm hopeful_almeida
+  173  docker ps -a
+  174  docker rm lonely_nobel
+  175  docker rmi bdbd7cca68d1
+  176  docker run shadowbq/testimage:1.2 
+  177  docker images
+  178  docker search shadowbq
+  179  docker help search
+  180  docker info
+  181  docker helptag
+  182  docker help tag
+  183  docker images
+  184  docker tags
+  185  docker ps -a
+  186  docker tag bdbd7cca68d1 shadowbq/testimage:latest
+  187  docker images
+  188  docker push shadowbq/testimage:latest
+  189  docker tag 0dba1f5beed7 shadowbq/tutorial_curl:latest
+  190  docker images
+  191  docker push shadowbq/tutorial_curl:latest
+  192  docker run shadowbq/tutorial_curl:latest
+  193  docker run shadowbq/tutorial_curl:latest curl --version
+  194  rocket
+  195  docker ps -l -q
+  196  docker help ps
+  197  docker ps -s
+  198  docker ps -s -a
+  199  docker ps -s -l
+  200  docker ps -a -q -l --no-trunc=true
+  201  docker ps -a -q -l 
+  202  docker ps -q -l 
+  203   alias dl='docker ps -l -q'
+  204  dl
+  205  docker inspect `dl`
+  214  curl -s -S 'https://registry.hub.docker.com/v2/repositories/library/centos/tags/' | jq '."results"[]["name"]'
+  215  docker search centos
+  216  curl -s -S 'https://registry.hub.docker.com/v2/repositories/library/centos/tags/' | jq '."results"[]["name"]' |sort 
+  217  docker help search
+  218  docker search centos --no-trunc=false
+  219  docker search --no-trunc=false centos
+  220  vi docker_remote_tags
+  221  chmod +x docker_remote_tags 
+  222  which bash
+  223  vi docker_remote_tags
+  224  ./docker_remote_tags library/centos
+  225  cat docker_remote_tags 
+  226  history 
+  227  gem
+  228  toolbox
+  229  toolbox hub --help
+  230  toolbox dnf git
+  231  toolbox dnf install -y git
+  232  hub
+  233  toolbox hub
+  234  toolbox gist
+  235  toolbox
+  241  docker help run
+  242  toolbox --help
+  244  git status
+  245  git add .
+  246  git status
+  247  history > ./coreos_tutorial.txt
