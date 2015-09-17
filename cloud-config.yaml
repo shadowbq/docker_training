@@ -1,0 +1,11 @@
+#cloud-config
+
+hostname: "mycore-test"
+users:
+	- name: "admin"
+	  passwd: "$1$FBLSKe5A$oLTecUhjfTv1vvH.AFPv11"
+	  groups:
+	  	- "sudo"
+	  	- "docker"
+	  ssh_authorized_keys:
+	  	- "ssh-dss AAAAB3NzaC1kc3MAAACBAJFhJ5Nk+/oJXeA19DLXZmuMjm+3Y4nqnKBTV6dKIIU3fGUxC2rCoSm5eGbVJQaiM/K6XC1YRl+YfiFwF6F1YQCXDCMmzlR5pzqSZkuI2w2K9meYtOIWPFdO+3fIiVyU0Lmm9Erw4KCBnRBnqvtbu5g3Sbas/ZJWLJq5tnT/tfnLAAAAFQC9MC/L+b8Hbz94AOdmLf2GPpVwrQAAAIBaWCCnC+m3sHVoUG2Po/OTDO3OMxeCPGNisrtAsizXc8QQDEHn1DxelYKjPdKiGYy3J5WaUlXgThopJBYtZQFfUEK/MfziXtDyOdcOjFdymBn5bdKjC3AHq1+io3LrlEpFufqpyV0nYjBrYyVT+DnrlmGuml7Iv4uuAbmhvRJMzAAAAIBDvjamyVaF4b72Lzs5Sguua8OI+vbRPq/hBfqmb37tZRd9efJkRcLDIw6iGZNMKkbuUli8az2C5BLHd7YlYAEjO37otNogDuzJPqrLQJQmjj0lcu8eem4W+MkIXcTgasyatKxhvKQRUS2XOOFTZVsHA/MwxF/NzauoHXWCP0QkGg== shadowbq@EscapeHandler"
