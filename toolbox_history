@@ -1,0 +1,19 @@
+yum install htop
+htop
+exit
+dnf install iotop
+exit
+yum install bmon
+exit
+dnf install glances
+exit
+ruby --version
+dnf install ruby
+gem install gist
+dnf install hub
+hub --help
+exit
+gist login
+gist --help
+gist --login
+exit
