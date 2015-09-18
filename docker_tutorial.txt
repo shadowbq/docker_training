@@ -234,3 +234,5 @@ drwxr-xr-x 3 root root    4096 Sep 18 20:08 ..
 
 admin@mycore-test /opt/bin $ sudo chmod +x docker-compose 
 
+admin@mycore-test ~/sandbox/test $ docker-compose --version
+docker-compose version: 1.4.1
