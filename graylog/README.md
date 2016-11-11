@@ -1,5 +1,5 @@
 ## Config Volumes
-```
+``` 
 fireball@chestnut ~ $ sudo su -
 chestnut ~ # mkdir -p /graylog/config
 chestnut ~ # mkdir -p /graylog/data
