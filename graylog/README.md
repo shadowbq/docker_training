@@ -41,6 +41,19 @@ drwxrwxrwx. 4 root       root        4096 Nov  3 01:13 ..
 -rw-r--r--. 1 fireball fireball 21526 Nov  3 01:16 graylog.conf
 -rw-r--r--. 1 fireball fireball  1674 Nov  3 01:16 log4j2.xml
 ```
+### Inspecting Docker Volumes
+
+```
+$ docker volume inspect 0211b36d6d052a3c0178f4c1ab685f23ad249138aa84284e5a72dcf550d9aa06
+[
+    {
+        "Name": "0211b36d6d052a3c0178f4c1ab685f23ad249138aa84284e5a72dcf550d9aa06",
+        "Driver": "local",
+        "Mountpoint": "/var/lib/docker/volumes/0211b36d6d052a3c0178f4c1ab685f23ad249138aa84284e5a72dcf550d9aa06/_data",
+        "Labels": null
+    }
+]
+```
 
 ## Docker Compose
 
