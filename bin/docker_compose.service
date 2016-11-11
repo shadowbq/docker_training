@@ -1,0 +1,19 @@
+[Unit]
+Description=Composer
+Requires=docker.service
+BindsTo=docker.service
+After=docker.service
+Conflicts=shutdown.target reboot.target halt.target
+
+[Service]
+TimeoutStartSec=0
+TimeoutStopSec=30
+Restart=always
+RestartSec=10
+ExecStart=/opt/bin/docker-compose -f /home/fireball/docker-compose.yml up -d
+ExecStop=/opt/bin/docker-compose -f /home/fireball/docker-compose.yml stop
+
+NotifyAccess=all
+
+[Install]
+WantedBy=default.target
