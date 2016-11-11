@@ -23,6 +23,7 @@ Ubuntu
 fireball@chestnut ~ $ cat ~/.toolboxrc
 TOOLBOX_DOCKER_IMAGE=ubuntu
 TOOLBOX_DOCKER_TAG=16.04
+TOOLBOX_USER=root
 ```
 
 Start Toolbox
