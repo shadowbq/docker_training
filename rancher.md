@@ -1,3 +1,4 @@
+http://sdbrett.com/BrettsITBlog/2017/01/rancheros-installing-to-hard-disk/
 edit offline cloudconfig with proper IPs
 
 (connect CD)
