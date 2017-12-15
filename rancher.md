@@ -14,6 +14,7 @@ sudo ros service up open-vm-tools
 
 # Install Rancher 2.0 GUI (not ROS but on ROS)
 http://rancher.com/docs/rancher/v1.6/en/installing-rancher/installing-server/
+http://rancher.com/docs/os/v1.1/en/running-rancher-on-rancheros/
 ## on guacamole..
 mysql user db cattle on guacamole server 10.0.0.201
 change mysql.conf to bind to 0.0.0.0 <restart mysql service>
