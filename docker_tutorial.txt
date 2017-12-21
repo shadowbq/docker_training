@@ -236,3 +236,8 @@ admin@mycore-test /opt/bin $ sudo chmod +x docker-compose
 
 admin@mycore-test ~/sandbox/test $ docker-compose --version
 docker-compose version: 1.4.1
+
+
+
+
+docker run -d -it --label io.rancher.container.network=true ubuntu:14.04.2
