@@ -241,3 +241,6 @@ docker-compose version: 1.4.1
 
 
 docker run -d -it --label io.rancher.container.network=true ubuntu:14.04.2
+
+# Enter running container via shell
+docker exec -it <container name> /bin/bash to get a bash shell in the container.
